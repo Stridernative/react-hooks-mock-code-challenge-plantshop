@@ -1,6 +1,8 @@
 import React from "react";
+import PlantForm from "./NewPlantForm"
 
-function Header() {
+
+function Header({ newPlant }) {
   return (
     <header>
       <h1>
@@ -9,6 +11,7 @@ function Header() {
           🌱
         </span>
       </h1>
+      <PlantForm newPlant={newPlant}/>
     </header>
   );
 }
